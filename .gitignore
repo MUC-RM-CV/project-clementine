@@ -1,0 +1,13 @@
+# IDE Configs
+.idea/
+.vscode/
+
+# Build Files
+*build*/
+
+*.exe
+*.obj
+*.o
+
+# Temporary Files
+/trash/
