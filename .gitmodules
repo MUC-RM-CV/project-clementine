@@ -1,0 +1,12 @@
+[submodule "image"]
+	path = image
+	url = https://github.com/MUC-RM-CV/mindvision-cam-wrapper.git
+[submodule "windmill"]
+	path = windmill
+	url = https://github.com/MUC-RM-CV/windmill-detect.git
+[submodule "armor"]
+	path = armor
+	url = https://github.com/MUC-RM-CV/armor-detect.git
+[submodule "message"]
+	path = message
+	url = https://github.com/MUC-RM-CV/message-send.git
