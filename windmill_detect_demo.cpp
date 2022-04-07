@@ -15,13 +15,12 @@ std::string to_string(cv::Point2f p) {
 
 template<class Iterable>
 static std::string arrayToString(Iterable t) {
-    std::string str = "[";
-    for (const auto& val : t) { str += to_string(val) + ", "; }
-    if (str.length() > 2) {
-        str.pop_back();
-        str.pop_back();
-    }
-    return str + "]";
+    auto comma_fold = [](std::string a, const auto & val) {
+        return std::move(a) + ", " + to_string(val);
+    };
+    return "[" + std::accumulate(std::next(t.begin()), t.end(), 
+                                 to_string(t.front()), // start with first element
+                                 comma_fold) + "]";
 }
 
 int main(int argc, char* argv[]) {
