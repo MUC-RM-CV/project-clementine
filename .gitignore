@@ -11,3 +11,10 @@
 
 # Temporary Files
 /trash/
+
+# VS Code LLVM-Clangd Extension Cache
+.cache/clangd/
+
+# Visual Studio
+.vs/
+CMakeSettings.json
