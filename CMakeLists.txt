@@ -10,9 +10,13 @@ add_subdirectory(windmill)  # Importing Library Target: windmill_detect
 add_subdirectory(image)     # Importing Library Target: img_input
 add_subdirectory(armor)     # Importing Library Target: armor_detect
 add_subdirectory(message)   # Importing Library Target: message
+add_subdirectory(utils)     # Importing Library Target: utils
 
 add_executable(windmill_detect_demo windmill_detect_demo.cpp)
 target_link_libraries(windmill_detect_demo windmill_detect img_input message)
 
 add_executable(armor_detect_demo armor_detect_demo.cpp)
 target_link_libraries(armor_detect_demo armor_detect img_input)
+
+add_executable(cli_parser_demo cli_parser_demo.cpp)
+target_link_libraries(cli_parser_demo img_input utils)
