@@ -10,3 +10,6 @@
 [submodule "message"]
 	path = message
 	url = https://github.com/MUC-RM-CV/message-send.git
+[submodule "utils"]
+	path = utils
+	url = https://github.com/MUC-RM-CV/cpp-utils.git
